@@ -5,6 +5,10 @@ const tweetSchema=new mongoose.Schema({
         required:true,
         trim:true,
         maxlength:200
+    },
+    image:{
+        type:String,
+        _default:null
     }
 });
 const Tweet =mongoose.model("Tweet",tweetSchema);
